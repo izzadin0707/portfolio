@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+<style>
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+</style>
+<body style="background-color: #2a243e;">
+    <div class="container-fluid bg-white d-flex justify-content-center position-relative" style="z-index: 0; height: 25vw; padding: 0 !important; overflow: hidden;">
+        <div class="w-100 h-100 position-absolute opacity-75" style="box-shadow: inset 0 0 50px 0 #000; z-index: 1;"></div>
+        <img src="assets/image/Mikami With Yukata.png" alt="" style="z-index: 0; position: absolute; width: 60%; transform: translateY(-34%) translateX(-10%) rotate(-40deg);">
+    </div>
+    <div class="container-fluid d-flex flex-column align-items-center" style="z-index: 1;">
+        <div class="border border-3 shadow-sm rounded-circle" style="transform: translateY(-50%); margin-bottom: -6%; aspect-ratio: 1/1; width: 13rem; border-color: #2a243e !important; background-image: url('assets/image/Risu\ Nyungsep\ -\ white\ bg.png'); background-position: center; background-size: contain;"></div>
+        <span class="fs-1 fw-semibold text-white">Namy Nakamy</span>
+        <span class="fs-6 fw-semibold text-white opacity-50 mt-2">@namynakamy</span>
+        <div class="d-flex justify-content-center gap-4 mt-3 fs-5">
+            <a href="https://x.com/namynakamy" target="_blank" class="text-white">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" class="text-white">
+                <i class="bi bi-discord"></i>
+            </a>
+            <a href="https://www.instagram.com/namypedo/" target="_blank" class="text-white">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
+    </div>
+    <div class="container border-bottom border-2 fs-3 mt-3 fw-semibold text-white d-flex flex-nowrap gap-3" style="padding: 0; border-color: rgba(255, 255, 255, .1) !important; position: sticky; top: 0; background-color: #2a243e;">
+        <span style="cursor: pointer;" class="py-2 px-3 border-bottom border-3">Portfolio</span>
+        <span style="cursor: pointer;" class="py-2 px-3 opacity-25">Commissions</span>
+        <span style="cursor: pointer;" class="py-2 px-3 opacity-25">Terms of Service</span>
+        <span style="cursor: pointer;" class="py-2 px-3 opacity-25">About</span>
+    </div>
+    <div id="portfolio" class="container mt-5 d-flex flex-nowrap gap-3 flex-column flex-md-row">
+        <div class="d-flex flex-nowrap gap-3" style="flex: 1;">
+            <div id="port-1" class="d-flex flex-column gap-4" style="flex: 1;"></div>
+            <div id="port-2" class="d-flex flex-column gap-4" style="flex: 1;"></div>
+        </div>
+        <div class="d-flex flex-nowrap gap-3" style="flex: 1;">
+            <div id="port-3" class="d-flex flex-column gap-4" style="flex: 1;"></div>
+            <div id="port-4" class="d-flex flex-column gap-4" style="flex: 1;"></div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 p-5 d-flex flex-nowrap flex-column align-items-center gap-3 bg-white">
+        <span class="fs-3 fw-semibold text-uppercase">Contact Me</span>
+        <span class="fs-5 fw-semibold">namynakamy@gmail.com</span>
+        <span class="fs-5 fw-semibold">OR</span>
+        <div class="d-flex justify-content-center gap-5 fs-3">
+            <a href="https://x.com/namynakamy" target="_blank" class="text-dark">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" class="text-dark">
+                <i class="bi bi-discord"></i>
+            </a>
+            <a href="https://www.instagram.com/namypedo/" target="_blank" class="text-dark">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/jquery/jquery.min.js"></script>
+<script>
+    let x = 1;
+    while (x <= 18) {
+        for (let y = 1; y <= 4; y++) {            
+            let html = `<img src="assets/image/portfolio/${x}.png" class="w-100 rounded" alt="">`;
+            $(`#port-${y}`).append(html);
+            x++;
+        }
+    }
+</script>
+</html>
